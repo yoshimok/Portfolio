@@ -10,7 +10,7 @@ export type Props = {
 export const Header: React.FC<Props> = (props: Props) => {
   return (
     <div className={styles.header}>
-      <div className={styles.hamburgerButton}>
+      <div className={styles.hamburgerButton} onClick={props.clickHamburger}>
         <img className={styles.buttonImage} src={icon} alt="buttonIcon" />
       </div>
       <span className={styles.headerTitle}>{props.headerTitle}</span>
