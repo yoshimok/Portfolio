@@ -1,0 +1,25 @@
+$header-height: 64px;
+
+// text styles
+$text-sizes: (
+  huge: 32px,
+  large: 24px,
+  normal: 18px,
+  small: 14px,
+);
+
+$text-weights: (
+  bold: 900,
+  regular: 400,
+);
+
+@mixin text($size, $thickness) {
+  font-family: "Roboto";
+  font-size: map-get($text-sizes, $size);
+  font-weight: map-get($text-weights, $thickness);
+}
+
+@mixin button() {
+  user-select: none;
+  cursor: pointer;
+}
