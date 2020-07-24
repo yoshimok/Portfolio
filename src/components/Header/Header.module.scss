@@ -1,0 +1,35 @@
+@import "../../assets/styles/variables.scss";
+
+$header-height: 64px;
+$header-button-size: 56px;
+
+.header {
+  height: $header-height;
+  line-height: $header-height;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  @include text(large, bold);
+}
+
+.hamburgerButton {
+  height: $header-button-size;
+  width: $header-button-size;
+  text-align: center;
+  line-height: $header-height;
+  float: left;
+}
+
+.buttonImage {
+  width: 24px;
+}
+
+.headerTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
