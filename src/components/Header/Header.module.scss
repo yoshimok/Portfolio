@@ -1,6 +1,5 @@
 @import "../../assets/styles/variables.scss";
 
-$header-height: 64px;
 $header-button-size: 56px;
 
 .header {
@@ -19,8 +18,9 @@ $header-button-size: 56px;
   height: $header-button-size;
   width: $header-button-size;
   text-align: center;
-  line-height: $header-height;
   float: left;
+
+  @include button();
 }
 
 .buttonImage {
