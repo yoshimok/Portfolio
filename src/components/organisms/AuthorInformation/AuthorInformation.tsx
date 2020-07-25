@@ -5,23 +5,12 @@ import classNames from "classnames";
 import { Profile } from "../../molecules/Profile/Profile";
 import { UrlList } from "../../molecules/UrlList/UrlList";
 
-interface Profile {
-  name: string;
-  icon: string;
-  position: string;
-}
-
-interface urlInfo {
-  accountName: string;
-  serviceName: string;
-  serviceIcon: string;
-  url: string;
-}
+import { IProfile, IUrlInfo } from "model/interfaces";
 
 export type Props = {
-  profile: Profile;
+  profile: IProfile;
   sideView?: boolean;
-  urls: urlInfo[];
+  urls: IUrlInfo[];
 };
 
 export const AuthorInformation: React.FC<Props> = (props: Props) => {

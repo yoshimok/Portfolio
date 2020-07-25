@@ -3,15 +3,10 @@ import styles from "./UrlList.module.scss";
 
 import { ListItemWithIcon } from "components/atoms/ListItemWithIcon/ListItemWithIcon";
 
-interface urlInfo {
-  accountName: string;
-  serviceName: string;
-  serviceIcon: string;
-  url: string;
-}
+import { IUrlInfo } from "model/interfaces";
 
 export type Props = {
-  urls: urlInfo[];
+  urls: IUrlInfo[];
   abridgement?: boolean;
 };
 
@@ -19,7 +14,7 @@ const jumpTo = (url: string) => {
   window.open(url, "_blank");
 };
 
-const urlList = (infos: urlInfo[]): JSX.Element => {
+const urlList = (infos: IUrlInfo[]): JSX.Element => {
   const listRender = () => {
     return infos.map((info, index) => {
       return (
@@ -37,7 +32,7 @@ const urlList = (infos: urlInfo[]): JSX.Element => {
   return <div className={styles.list}>{listRender()}</div>;
 };
 
-const urlListWithDesc = (infos: urlInfo[]): JSX.Element => {
+const urlListWithDesc = (infos: IUrlInfo[]): JSX.Element => {
   const listRender = () => {
     return infos.map((info, index) => {
       return (

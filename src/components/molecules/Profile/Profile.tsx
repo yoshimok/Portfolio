@@ -4,14 +4,10 @@ import classNames from "classnames";
 
 import { Name } from "components/atoms/Name/Name";
 
-interface Profile {
-  name: string;
-  icon: string;
-  position: string;
-}
+import { IProfile } from "model/interfaces";
 
 export type Props = {
-  profile: Profile;
+  profile: IProfile;
   sideView?: boolean;
 };
 
