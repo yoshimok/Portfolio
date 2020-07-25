@@ -3,7 +3,7 @@ import { Header, Props } from "./Header";
 import { action } from "@storybook/addon-actions";
 
 export default {
-  title: "Component/Header",
+  title: "Component/Organisms/Header",
   component: Header,
 };
 

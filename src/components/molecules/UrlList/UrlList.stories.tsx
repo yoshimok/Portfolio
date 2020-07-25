@@ -5,7 +5,7 @@ import twitterLogo from "assets/icons/twitter.svg";
 import codepenLogo from "assets/icons/codepen.svg";
 
 export default {
-  title: "Component/UrlList",
+  title: "Component/Molecules/UrlList",
   component: UrlList,
 };
 
