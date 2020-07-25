@@ -9,7 +9,7 @@ export type Props = {
 
 export const ListItemWithIcon: React.FC<Props> = (props: Props) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} onClick={props.click}>
       <img className={styles.itemIcon} src={props.icon} alt="itemiIcon" />
       <span className={styles.title}>{props.title}</span>
     </div>

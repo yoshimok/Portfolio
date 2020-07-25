@@ -8,6 +8,7 @@ $list-item-height: 24px;
   padding: 8px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   @include text(normal, bold);
 }
@@ -16,7 +17,7 @@ $list-item-height: 24px;
 }
 
 .itemIcon {
-  margin-right: 8px;
+  margin-right: 16px;
 
   width: $list-item-height;
 }

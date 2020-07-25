@@ -14,4 +14,4 @@ const mockProps: Props = {
   click: action("clickItem"),
 };
 
-export const Three_Contents = () => <ListItemWithIcon {...mockProps} />;
+export const Default = () => <ListItemWithIcon {...mockProps} />;
