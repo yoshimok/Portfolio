@@ -1,0 +1,19 @@
+@import "~assets/styles/variables.scss";
+
+.container {
+  width: 100%;
+  margin: 16px 0;
+}
+
+.name {
+  color: $black;
+
+  @include text(large, bold);
+}
+
+.position {
+  color: $dark-grey;
+  border-bottom: solid 0.5px $dark-grey;
+
+  @include text(normal, reqular);
+}
