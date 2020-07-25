@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import logo from "../../assets/icons/logo.svg";
-import "./App.css";
+import logo from "assets/icons/logo.svg";
+import "./App.scss";
 
 function App() {
   const [speed, setSpeed] = useState(20);
 
   const spinProperty = {
-    animation: `App-logo-spin infinite ${speed}s linear`
+    animation: `App-logo-spin infinite ${speed}s linear`,
   };
 
   const up = () => {
