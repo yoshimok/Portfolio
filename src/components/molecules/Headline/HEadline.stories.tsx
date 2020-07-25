@@ -2,7 +2,7 @@ import React from "react";
 import { Headline, Props } from "./Headline";
 
 export default {
-  title: "Component/Headline",
+  title: "Component/Molecules/Headline",
   component: Headline,
 };
 
