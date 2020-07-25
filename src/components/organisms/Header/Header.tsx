@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Header.module.scss";
-import icon from "../../assets/icons/hamburger.svg";
+import icon from "assets/icons/hamburger.svg";
 
 export type Props = {
   headerTitle: string;
