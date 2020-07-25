@@ -23,7 +23,7 @@ const urlList = (infos: urlInfo[]): JSX.Element => {
   const listRender = () => {
     return infos.map((info, index) => {
       return (
-        <a href={info.url}>
+        <a href={info.url} target="_blank" rel="noopener noreferrer">
           <img
             className={styles.serviceLogo}
             src={info.serviceIcon}
