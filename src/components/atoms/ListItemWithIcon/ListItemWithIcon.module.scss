@@ -1,0 +1,22 @@
+@import "~assets/styles/variables.scss";
+
+$list-item-height: 24px;
+
+.container {
+  width: 100%;
+  height: $list-item-height;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+
+  @include text(normal, bold);
+}
+
+.iconContainer {
+}
+
+.itemIcon {
+  margin-right: 8px;
+
+  width: $list-item-height;
+}
