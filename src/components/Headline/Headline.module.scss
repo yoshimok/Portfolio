@@ -1,0 +1,13 @@
+@import "../../assets/styles/variables.scss";
+
+.headline {
+  padding: 0 16px;
+  margin: 8px 0 16px;
+  background-color: $grey;
+
+  border-bottom: solid 0.5px;
+  @include text(large, bold);
+}
+
+.title {
+}
