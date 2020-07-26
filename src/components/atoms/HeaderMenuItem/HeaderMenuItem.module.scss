@@ -1,0 +1,17 @@
+@import "~assets/styles/variables.scss";
+
+.container {
+  padding: 8px 16px;
+  width: auto;
+  color: $dark-grey;
+  display: inline-block;
+
+  transition: background 0.2s ease 0s;
+
+  &:hover {
+    background-color: $grey;
+  }
+
+  @include button();
+  @include text(normal, bold);
+}

@@ -10,3 +10,8 @@ export interface IUrlInfo {
   serviceIcon: string;
   url: string;
 }
+
+export interface IHeaderMenuItem {
+  title: string;
+  href: string;
+}
