@@ -15,3 +15,8 @@ export interface IHeaderMenuItem {
   title: string;
   href: string;
 }
+
+export interface IAuthorProfile {
+  profile: IProfile;
+  services: IUrlInfo[];
+}

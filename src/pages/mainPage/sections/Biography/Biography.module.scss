@@ -1,0 +1,8 @@
+@import "~assets/styles/variables.scss";
+
+.bio {
+  margin: 32px 16px;
+  text-align: center;
+
+  @include text(small, regular);
+}
