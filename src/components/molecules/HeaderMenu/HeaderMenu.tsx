@@ -6,7 +6,7 @@ import { HeaderMenuItem } from "components/atoms/HeaderMenuItem/HeaderMenuItem";
 import { IHeaderMenuItem } from "model/interfaces";
 
 const jumpTo = (url: string) => {
-  window.open(url, "_blank");
+  window.location.href = url;
 };
 
 export type Props = {
