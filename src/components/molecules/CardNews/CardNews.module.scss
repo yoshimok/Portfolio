@@ -15,22 +15,25 @@
 .postDate {
   color: $dark-grey;
   text-align: right;
+
+  @include text(small, regular);
 }
 
 .body {
-  display: flex;
+  @media screen and (min-width: 960px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
-  @include text(normal, regular);
+  @include text(small, regular);
 }
 
 .imageContainer {
-  display: flex;
-  align-items: center;
   flex-shrink: 2;
+  text-align: center;
 
-  padding-left: 16px;
-
+  padding: 16px;
   .image {
-    max-width: 40vw;
+    max-width: 60vw;
   }
 }
