@@ -26,8 +26,8 @@ export const CardNews: React.FC<Props> = (props: Props) => {
       </div>
       <div className={styles.postDate}>{isoToDate(props.datetime)}</div>
       <div className={styles.body}>
-        <p>{props.body}</p>
         {props.media ? mediaRender(props.media) : null}
+        <p>{props.body}</p>
       </div>
     </div>
   );
