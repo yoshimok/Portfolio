@@ -7,4 +7,4 @@ dayjs.locale("en");
 export const timeHandler = dayjs;
 
 export const isoToDate = (isoString: string): string =>
-  timeHandler(isoString).format("YYYY MMM Do (ddd) hh:mm:ss");
+  timeHandler(isoString).format("YYYY MMM Do HH:mm:ss");

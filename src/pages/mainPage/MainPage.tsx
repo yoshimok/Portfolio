@@ -18,8 +18,9 @@ export type Props = {};
 const mockProfile = {
   authorInfo: {
     profile: {
-      name: "Tom",
-      icon: "https://i.pravatar.cc/300",
+      name: "Maeda Yoshitaka",
+      icon:
+        "https://avatars0.githubusercontent.com/u/57283139?s=400&u=667cc4edcc61818d4bc39c0e44a3055789663446&v=4",
       position: "Software Enfineer",
     },
     services: [
@@ -48,7 +49,7 @@ const mockProfile = {
 };
 
 const mockHeaderProps = {
-  headerTitle: "HeaderTitle",
+  headerTitle: "Yoshimok",
   clickHamburger: () => {},
   contents: [
     {
@@ -67,7 +68,7 @@ const mockHeaderProps = {
 };
 
 const mockNewsContetnts = {
-  headline: "News Title",
+  headline: "News",
   contents: [
     {
       title: "ポートフォリオ作成中！",
@@ -132,7 +133,6 @@ export const MainPage: React.FC<Props> = (props: Props) => {
             alt="logo"
             style={spinProperty}
           />
-          {speed}
           <div className={"button-group"}>
             <div className="button" onClick={up}>
               ↑
