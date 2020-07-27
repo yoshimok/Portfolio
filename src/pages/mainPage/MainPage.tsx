@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "assets/icons/logo.svg";
 import "./App.scss";
 import styles from "./MainPage.module.scss";
+import { useMediaQuery } from "react-responsive";
 
 import githubLogo from "assets/icons/gitHub.svg";
 import twitterLogo from "assets/icons/twitter.svg";
@@ -55,12 +56,12 @@ const mockHeaderProps = {
       href: "http://localhost:3001#profile",
     },
     {
-      title: "contents2",
-      href: "http://localhost:3001#guruguru",
+      title: "news",
+      href: "http://localhost:3001#news",
     },
     {
-      title: "contents3",
-      href: "http://localhost9009",
+      title: "react fan",
+      href: "http://localhost:3001#guruguru",
     },
   ],
 };
@@ -84,6 +85,10 @@ const mockNewsContetnts = {
 };
 
 export const MainPage: React.FC<Props> = (props: Props) => {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-device-width: 960px)",
+  });
+
   const [speed, setSpeed] = useState(20);
 
   const spinProperty = {
@@ -91,8 +96,12 @@ export const MainPage: React.FC<Props> = (props: Props) => {
   };
 
   const up = () => {
-    if (speed < 2) {
-      setSpeed(speed - 0.05);
+    if (speed <= 3) {
+      if (speed - 0.1 <= 0) {
+        alert("これ以上は無理！");
+        return;
+      }
+      setSpeed(speed - 0.1);
 
       return;
     }
@@ -105,7 +114,7 @@ export const MainPage: React.FC<Props> = (props: Props) => {
 
   return (
     <div>
-      <Header {...mockHeaderProps} />
+      <Header {...mockHeaderProps} withMenu={isDesktopOrLaptop} />
       <div className={styles.body}>
         <div className={styles.profile}>
           <AuthorProfile {...mockProfile} />
@@ -123,6 +132,7 @@ export const MainPage: React.FC<Props> = (props: Props) => {
             alt="logo"
             style={spinProperty}
           />
+          {speed}
           <div className={"button-group"}>
             <div className="button" onClick={up}>
               ↑
