@@ -3,13 +3,14 @@ import logo from "assets/icons/logo.svg";
 import "./App.scss";
 import styles from "./MainPage.module.scss";
 
-import { AuthorProfile } from "./sections/AuthorProfile/AuthorProfile";
-import { Biography } from "./sections/Biography/Biography";
-import { Header } from "components/organisms/Header/Header";
-
 import githubLogo from "assets/icons/gitHub.svg";
 import twitterLogo from "assets/icons/twitter.svg";
 import codepenLogo from "assets/icons/codepen.svg";
+
+import { AuthorProfile } from "./sections/AuthorProfile/AuthorProfile";
+import { Biography } from "./sections/Biography/Biography";
+import { Header } from "components/organisms/Header/Header";
+import { News } from "./sections/News/News";
 
 export type Props = {};
 
@@ -64,6 +65,24 @@ const mockHeaderProps = {
   ],
 };
 
+const mockNewsContetnts = {
+  headline: "News Title",
+  contents: [
+    {
+      title: "ポートフォリオ作成中！",
+      body:
+        "作ると言い続けてなかなか作成していなかったポートフォリオですが、今頑張ってつくっています。公開したらたくさんの人に見てほしいなあ。１０人か？５０人か？１００人か？？ いや１００人はないと思うな... いや５０人はあるかもしれへんわ。流石に０人ってことはないと思うな",
+      datetime: "2020-07-19T10:39:35.725Z",
+    },
+    {
+      title: "News Title",
+      body:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis vulputate dui. Nulla vestibulum sapien ac massa pharetra rutrum. Pellentesque lacus sapien, efficitur in mattis at, hendrerit quis tortor. Cras ac auctor lacus. Aliquam non justo id purus dignissim mattis sed viverra metus. Phasellus quis facilisis arcu. Donec molestie tortor eu vestibulum porta. Aliquam feugiat felis turpis, facilisis porta turpis pharetra ut. Vivamus ante nunc, ullamcorper at ante porttitor, luctus commodo massa.",
+      datetime: "2020-07-19T10:39:35.725Z",
+    },
+  ],
+};
+
 export const MainPage: React.FC<Props> = (props: Props) => {
   const [speed, setSpeed] = useState(20);
 
@@ -93,6 +112,7 @@ export const MainPage: React.FC<Props> = (props: Props) => {
         </div>
         <div className={styles.contents}>
           <Biography bioText={mockProfile.biography} />
+          <News {...mockNewsContetnts} />
         </div>
       </div>
       <div className="App">

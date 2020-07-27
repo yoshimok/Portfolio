@@ -4,5 +4,9 @@
   margin: 32px 16px;
   text-align: center;
 
+  @media screen and (min-width: 960px) {
+    text-align: left;
+  }
+
   @include text(small, regular);
 }
