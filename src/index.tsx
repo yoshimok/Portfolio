@@ -3,10 +3,11 @@ import ReactDOM from "react-dom";
 import "./assets/styles/global.scss";
 import { Router } from "./router";
 import * as serviceWorker from "./serviceWorker";
+import { MainPage } from "./pages/mainPage/MainPage";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router />
+    <MainPage />
   </React.StrictMode>,
   document.getElementById("root")
 );
