@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.fe0412cd.chunk.css",
-    "main.js": "/static/js/main.693fb390.chunk.js",
-    "main.js.map": "/static/js/main.693fb390.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b67cef05.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b67cef05.js.map",
-    "static/js/2.ee5f0aed.chunk.js": "/static/js/2.ee5f0aed.chunk.js",
-    "static/js/2.ee5f0aed.chunk.js.map": "/static/js/2.ee5f0aed.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.7274bc3a63bef1f7fad20d359218330c.js": "/precache-manifest.7274bc3a63bef1f7fad20d359218330c.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.fe0412cd.chunk.css.map": "/static/css/main.fe0412cd.chunk.css.map",
-    "static/js/2.ee5f0aed.chunk.js.LICENSE.txt": "/static/js/2.ee5f0aed.chunk.js.LICENSE.txt",
-    "static/media/codepen.svg": "/static/media/codepen.3772eb1e.svg",
-    "static/media/gitHub.svg": "/static/media/gitHub.6ef491cb.svg",
-    "static/media/hamburger.svg": "/static/media/hamburger.38ca5b94.svg",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
-    "static/media/twitter.svg": "/static/media/twitter.d390b04e.svg"
+    "main.css": "/Portfolio/static/css/main.fe0412cd.chunk.css",
+    "main.js": "/Portfolio/static/js/main.33b0d4c4.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.33b0d4c4.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.e93a05b5.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e93a05b5.js.map",
+    "static/js/2.ee5f0aed.chunk.js": "/Portfolio/static/js/2.ee5f0aed.chunk.js",
+    "static/js/2.ee5f0aed.chunk.js.map": "/Portfolio/static/js/2.ee5f0aed.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.d64e01ee4e8b4c54f2a2b5f19683e69b.js": "/Portfolio/precache-manifest.d64e01ee4e8b4c54f2a2b5f19683e69b.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/main.fe0412cd.chunk.css.map": "/Portfolio/static/css/main.fe0412cd.chunk.css.map",
+    "static/js/2.ee5f0aed.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.ee5f0aed.chunk.js.LICENSE.txt",
+    "static/media/codepen.svg": "/Portfolio/static/media/codepen.3772eb1e.svg",
+    "static/media/gitHub.svg": "/Portfolio/static/media/gitHub.6ef491cb.svg",
+    "static/media/hamburger.svg": "/Portfolio/static/media/hamburger.38ca5b94.svg",
+    "static/media/logo.svg": "/Portfolio/static/media/logo.5d5d9eef.svg",
+    "static/media/twitter.svg": "/Portfolio/static/media/twitter.d390b04e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b67cef05.js",
+    "static/js/runtime-main.e93a05b5.js",
     "static/js/2.ee5f0aed.chunk.js",
     "static/css/main.fe0412cd.chunk.css",
-    "static/js/main.693fb390.chunk.js"
+    "static/js/main.33b0d4c4.chunk.js"
   ]
 }
