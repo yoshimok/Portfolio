@@ -32,7 +32,7 @@ const newsRender = (contents?: INewsContents[]) => {
 
 export const News: React.FC<Props> = (props: Props) => {
   return (
-    <div id="" className={styles.container}>
+    <div id="news" className={styles.container}>
       <Headline title={props.headline} />
       {newsRender(props.contents)}
     </div>
