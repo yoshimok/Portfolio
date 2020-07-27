@@ -6,13 +6,14 @@
   @media screen and (min-width: 960px) {
     display: flex;
     justify-content: center;
+    padding: 0 72px;
   }
 }
 
 .profile {
   padding-top: $header-height;
   @media screen and (min-width: 960px) {
-    height: 100%;
+    padding-right: 16px;
   }
 }
 
