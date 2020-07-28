@@ -15,5 +15,5 @@
   color: $dark-grey;
   border-bottom: solid 0.5px $dark-grey;
 
-  @include text(normal, reqular);
+  @include text(normal, bold);
 }
