@@ -87,7 +87,7 @@ const mockNewsContetnts = {
 
 export const MainPage: React.FC<Props> = (props: Props) => {
   const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-device-width: 960px)",
+    query: "(min-width: 960px)",
   });
 
   const [speed, setSpeed] = useState(20);

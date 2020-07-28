@@ -12,7 +12,7 @@ export type Props = {
 
 export const AuthorProfile: React.FC<Props> = (props: Props) => {
   const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-device-width: 960px)",
+    query: "(min-width: 960px)",
   });
 
   return (
