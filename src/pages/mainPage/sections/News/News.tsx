@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./News.module.scss";
 
-import { Headline } from "components/molecules/Headline/Headline";
 import { CardNews } from "components/molecules/CardNews/CardNews";
+import { Contents } from "templates/Contents/Contents";
 
 interface INewsContents {
   title: string;
@@ -31,10 +31,5 @@ const newsRender = (contents?: INewsContents[]) => {
 };
 
 export const News: React.FC<Props> = (props: Props) => {
-  return (
-    <div id="news" className={styles.container}>
-      <Headline title={props.headline} />
-      {newsRender(props.contents)}
-    </div>
-  );
+  return <Contents headline="News">{newsRender(props.contents)}</Contents>;
 };
