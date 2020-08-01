@@ -21,9 +21,7 @@
 }
 
 .subContentsContainer {
-  display: flex;
-}
-
-.subContent {
-  padding-right: 32px;
+  @media screen and (min-width: 960px) {
+    display: flex;
+  }
 }
