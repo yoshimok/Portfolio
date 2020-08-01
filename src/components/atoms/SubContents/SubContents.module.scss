@@ -1,7 +1,7 @@
 @import "~assets/styles/variables.scss";
 
 .container {
-  padding-right: 32px;
+  padding-right: 16px;
 
   color: $black;
 }
@@ -10,5 +10,5 @@
   color: $dark-grey;
   display: inline-block;
 
-  @include text(normal, bold);
+  @include text(small, bold);
 }

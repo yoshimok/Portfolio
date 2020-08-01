@@ -35,10 +35,7 @@ export const CardSkill: React.FC<Props> = (props: Props) => {
         <p>{props.body}</p>
         <div className={styles.subContentsContainer}>
           <SubContents title={"経験年数"} body={props.experience} />
-          <SubContents
-            title={"作成物"}
-            body={"ポートフォリオ、社内通貨サービス開発(業務)"}
-          />
+          <SubContents title={"作成物"} body={props.example} />
         </div>
       </div>
     </div>
