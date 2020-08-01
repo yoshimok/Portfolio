@@ -3,11 +3,7 @@ import styles from "./CardSkill.module.scss";
 
 import { SubContents } from "components/atoms/SubContents/SubContents";
 
-interface ISkill {
-  name: string;
-  logo?: string;
-  url?: string;
-}
+import { ISkill } from "model/interfaces";
 
 export type Props = {
   skill: ISkill;
@@ -20,9 +16,11 @@ export const CardSkill: React.FC<Props> = (props: Props) => {
   const cardBackGround = {
     backgroundImage: `url(${props.skill.logo})`,
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "center center",
+    backgroundPosition: "center right",
     backgroundColor: "rgba(255,255,255,0.75)",
     backgroundBlendMode: "lighten",
+    backgroundSize: "contain",
+    backgroundOrigin: "content-box",
   };
 
   return (

@@ -20,3 +20,9 @@ export interface IAuthorProfile {
   profile: IProfile;
   services: IUrlInfo[];
 }
+
+export interface ISkill {
+  name: string;
+  logo?: string;
+  url?: string;
+}
