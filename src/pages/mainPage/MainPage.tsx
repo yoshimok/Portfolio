@@ -7,11 +7,15 @@ import { useMediaQuery } from "react-responsive";
 import githubLogo from "assets/icons/gitHub.svg";
 import twitterLogo from "assets/icons/twitter.svg";
 import codepenLogo from "assets/icons/codepen.svg";
+import react from "assets/icons/react.svg";
+import grafana from "assets/icons/grafana.svg";
+import loki from "assets/icons/loki.svg";
 
 import { AuthorProfile } from "./sections/AuthorProfile/AuthorProfile";
 import { Biography } from "./sections/Biography/Biography";
 import { Header } from "components/organisms/Header/Header";
 import { News } from "./sections/News/News";
+import { Skills } from "./sections/Skills/Skills";
 
 export type Props = {};
 
@@ -84,6 +88,41 @@ const mockNewsContetnts = {
   ],
 };
 
+const mockSkillContents = {
+  contents: [
+    {
+      skill: {
+        name: "React",
+        logo: react,
+      },
+      body:
+        "フロントエンド開発で一番お世話になってる。主にReact + TypeScript(tsx)を使用しています。Reduxは若干苦手。。",
+      experience: "1年～",
+      example: "ポートフォリオ、社内通貨サービス開発(業務)",
+    },
+    {
+      skill: {
+        name: "Grafana",
+        logo: grafana,
+      },
+      body:
+        "クール。簡単にダッシュボードを作れるし、アラートの発報も比較的簡単に設定できる",
+      experience: "3か月~",
+      example: "社内開発プロダクトのサービス監視（業務）",
+    },
+    {
+      skill: {
+        name: "Grafana Loki",
+        logo: loki,
+      },
+      body:
+        "promtail likeなマルチテナントログ集約システム。導入がHelmで簡単にできることからKubernetesのロギングを行う際には手軽に実装できる点で重宝される。データのアナライズの点に関してはElasticに軍配があがるが、Lokiはまだ若いのでこれからに期待ですね",
+      experience: "2か月~",
+      example: "社内開発プロダクトのサービス監視（業務）",
+    },
+  ],
+};
+
 export const MainPage: React.FC<Props> = (props: Props) => {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 960px)",
@@ -122,6 +161,7 @@ export const MainPage: React.FC<Props> = (props: Props) => {
         <div className={styles.contents}>
           <Biography bioText={mockProfile.biography} />
           <News {...mockNewsContetnts} />
+          <Skills {...mockSkillContents} />
         </div>
       </div>
       <div className="App">
