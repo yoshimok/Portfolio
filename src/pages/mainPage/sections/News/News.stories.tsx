@@ -7,7 +7,6 @@ export default {
 };
 
 const mockProps: Props = {
-  headline: "News Title",
   contents: [
     {
       title: "News Title",

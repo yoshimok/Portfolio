@@ -12,7 +12,6 @@ interface INewsContents {
 }
 
 export type Props = {
-  headline: string;
   contents?: INewsContents[];
 };
 

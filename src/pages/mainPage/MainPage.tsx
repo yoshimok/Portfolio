@@ -68,7 +68,6 @@ const mockHeaderProps = {
 };
 
 const mockNewsContetnts = {
-  headline: "News",
   contents: [
     {
       title: "ポートフォリオ作成中！",
