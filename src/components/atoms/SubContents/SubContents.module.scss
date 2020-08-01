@@ -1,0 +1,14 @@
+@import "~assets/styles/variables.scss";
+
+.container {
+  padding-right: 32px;
+
+  color: $black;
+}
+
+.subContentTitle {
+  color: $dark-grey;
+  display: inline-block;
+
+  @include text(normal, bold);
+}

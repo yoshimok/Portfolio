@@ -1,0 +1,29 @@
+@import "~assets/styles/variables.scss";
+
+.container {
+  margin: 0 16px;
+  padding: 16px 32px;
+
+  background: #ffffff;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+  @include text(large, bold);
+}
+
+.body {
+  @media screen and (min-width: 960px) {
+    flex-direction: row-reverse;
+  }
+
+  @include text(small, regular);
+}
+
+.subContentsContainer {
+  display: flex;
+}
+
+.subContent {
+  padding-right: 32px;
+}
