@@ -1,0 +1,9 @@
+@import "~assets/styles/variables.scss";
+
+.container {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 16px;
+  margin-bottom: 32px;
+}

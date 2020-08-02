@@ -3,12 +3,9 @@
 $list-item-height: 24px;
 
 .container {
-  width: 100%;
   height: $list-item-height;
   padding: 8px;
   display: flex;
-  align-items: center;
-  cursor: pointer;
 
   @include text(normal, bold);
 }
