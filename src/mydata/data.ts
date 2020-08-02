@@ -108,3 +108,8 @@ export const mockSkillContents = {
     },
   ],
 };
+
+export const mockContacts = {
+  mailAddress: "yoshimok@pompom.com",
+  twitterId: "@yoshimok__",
+};

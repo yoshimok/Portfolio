@@ -6,12 +6,13 @@ import { useMediaQuery } from "react-responsive";
 
 import * as data from "mydata/data";
 
+import { Footer } from "../../components/organisms/Footer/Footer";
+import { Header } from "components/organisms/Header/Header";
 import { AuthorProfile } from "./sections/AuthorProfile/AuthorProfile";
 import { Biography } from "./sections/Biography/Biography";
-import { Header } from "components/organisms/Header/Header";
 import { News } from "./sections/News/News";
 import { Skills } from "./sections/Skills/Skills";
-import { Footer } from "../../components/organisms/Footer/Footer";
+import { Contacts } from "./sections/Contacts/Contacts";
 
 export type Props = {};
 
@@ -54,6 +55,7 @@ export const MainPage: React.FC<Props> = (props: Props) => {
           <Biography bioText={data.mockProfile.biography} />
           <News {...data.mockNewsContetnts} />
           <Skills {...data.mockSkillContents} />
+          <Contacts {...data.mockContacts} />
         </div>
       </div>
       <Footer copyRight="© 2020 yoshimok" />
