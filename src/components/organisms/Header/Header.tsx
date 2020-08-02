@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Header.module.scss";
 import icon from "assets/icons/hamburger.svg";
 import classNames from "classnames";
+import { scrotllToTop } from "common/scrollToTop";
 
 import { HeaderMenu } from "../../molecules/HeaderMenu/HeaderMenu";
 
@@ -29,7 +30,12 @@ export const Header: React.FC<Props> = (props: Props) => {
   const withMenu = () => {
     return (
       <>
-        <span className={styles.headerTitleWitMenu}>{props.headerTitle}</span>
+        <span
+          className={styles.headerTitleWitMenu}
+          onClick={() => scrotllToTop()}
+        >
+          {props.headerTitle}
+        </span>
         <HeaderMenu menuItems={props.contents} />
       </>
     );

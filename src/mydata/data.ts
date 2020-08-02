@@ -43,16 +43,20 @@ export const mockHeaderProps = {
   clickHamburger: () => {},
   contents: [
     {
-      title: "contents1",
-      href: "http://localhost:3001#profile",
+      title: "news",
+      href: `${window.location.origin}/#news`,
     },
     {
-      title: "news",
-      href: "http://localhost:3001#news",
+      title: "skills",
+      href: `${window.location.origin}/#skills`,
+    },
+    {
+      title: "contacts",
+      href: `${window.location.origin}/#contacts`,
     },
     {
       title: "react fan",
-      href: "http://localhost:3001#guruguru",
+      href: `${window.location.origin}/#guruguru`,
     },
   ],
 };
