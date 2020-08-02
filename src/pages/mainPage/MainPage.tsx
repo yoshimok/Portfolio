@@ -16,6 +16,7 @@ import { Biography } from "./sections/Biography/Biography";
 import { Header } from "components/organisms/Header/Header";
 import { News } from "./sections/News/News";
 import { Skills } from "./sections/Skills/Skills";
+import { Footer } from "../../components/organisms/Footer/Footer";
 
 export type Props = {};
 
@@ -164,6 +165,7 @@ export const MainPage: React.FC<Props> = (props: Props) => {
           <Skills {...mockSkillContents} />
         </div>
       </div>
+      <Footer copyRight="© 2020 yoshimok" />
       <div className="App">
         <header id="guruguru" className="App-header">
           <img

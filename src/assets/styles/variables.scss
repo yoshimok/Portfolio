@@ -19,6 +19,10 @@ $text-weights: (
   regular: 400,
 );
 
+// z-index
+$z-header: 50;
+$z-footer: 50;
+
 @mixin text($size, $thickness) {
   font-family: "Roboto";
   font-size: map-get($text-sizes, $size);

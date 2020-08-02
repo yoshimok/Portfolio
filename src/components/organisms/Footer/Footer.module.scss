@@ -1,0 +1,14 @@
+@import "~assets/styles/variables.scss";
+
+.container {
+  width: 100%;
+  padding: 24px 0;
+  margin-top: 16px;
+  background-color: white;
+  border-top: groove 0.5px $grey;
+  z-index: $z-footer;
+}
+
+.copyRight {
+  text-align: center;
+}

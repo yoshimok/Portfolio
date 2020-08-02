@@ -10,6 +10,7 @@ $header-button-size: 56px;
   align-items: center;
   background-color: white;
   top: 0;
+  z-index: $z-header;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   @include text(large, bold);
