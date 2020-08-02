@@ -20,7 +20,6 @@ export type Props = {
 const skillsRender = (contents?: ISkillContents[]) => {
   return contents ? (
     contents.map((content, index) => {
-      console.log(content.example);
       return (
         <div className={styles.content} key={`skill contents-${index}`}>
           <CardSkill {...content} />
