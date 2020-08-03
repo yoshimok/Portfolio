@@ -54,10 +54,6 @@ export const mockHeaderProps = {
       title: "contacts",
       href: `${window.location.origin}/#contacts`,
     },
-    {
-      title: "react fan",
-      href: `${window.location.origin}/#guruguru`,
-    },
   ],
 };
 
