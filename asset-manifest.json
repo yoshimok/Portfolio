@@ -1,30 +1,31 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.161d1967.chunk.css",
-    "main.js": "/Portfolio/static/js/main.2cef28f0.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.2cef28f0.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.2a52e968.chunk.css",
+    "main.js": "/Portfolio/static/js/main.d8166226.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.d8166226.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.e93a05b5.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e93a05b5.js.map",
-    "static/js/2.2f3231a4.chunk.js": "/Portfolio/static/js/2.2f3231a4.chunk.js",
-    "static/js/2.2f3231a4.chunk.js.map": "/Portfolio/static/js/2.2f3231a4.chunk.js.map",
+    "static/js/2.48aaaa74.chunk.js": "/Portfolio/static/js/2.48aaaa74.chunk.js",
+    "static/js/2.48aaaa74.chunk.js.map": "/Portfolio/static/js/2.48aaaa74.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.655717f4344ace91fd2dcc1ef101c3fc.js": "/Portfolio/precache-manifest.655717f4344ace91fd2dcc1ef101c3fc.js",
+    "precache-manifest.b8fc87cf4c374a61523ce06a81d38505.js": "/Portfolio/precache-manifest.b8fc87cf4c374a61523ce06a81d38505.js",
     "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.161d1967.chunk.css.map": "/Portfolio/static/css/main.161d1967.chunk.css.map",
-    "static/js/2.2f3231a4.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.2f3231a4.chunk.js.LICENSE.txt",
+    "static/css/main.2a52e968.chunk.css.map": "/Portfolio/static/css/main.2a52e968.chunk.css.map",
+    "static/js/2.48aaaa74.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.48aaaa74.chunk.js.LICENSE.txt",
     "static/media/codepen.svg": "/Portfolio/static/media/codepen.3772eb1e.svg",
+    "static/media/cross.svg": "/Portfolio/static/media/cross.5d8fa210.svg",
     "static/media/gitHub.svg": "/Portfolio/static/media/gitHub.6ef491cb.svg",
     "static/media/grafana.svg": "/Portfolio/static/media/grafana.d62878be.svg",
     "static/media/hamburger.svg": "/Portfolio/static/media/hamburger.38ca5b94.svg",
     "static/media/letter.svg": "/Portfolio/static/media/letter.bb9e94e3.svg",
     "static/media/loki.svg": "/Portfolio/static/media/loki.6de4a8c7.svg",
     "static/media/react.svg": "/Portfolio/static/media/react.f37f26ad.svg",
-    "static/media/twitter.svg": "/Portfolio/static/media/twitter.0c00d1ce.svg"
+    "static/media/twitter.svg": "/Portfolio/static/media/twitter.d390b04e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e93a05b5.js",
-    "static/js/2.2f3231a4.chunk.js",
-    "static/css/main.161d1967.chunk.css",
-    "static/js/main.2cef28f0.chunk.js"
+    "static/js/2.48aaaa74.chunk.js",
+    "static/css/main.2a52e968.chunk.css",
+    "static/js/main.d8166226.chunk.js"
   ]
 }
