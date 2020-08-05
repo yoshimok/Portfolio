@@ -1,0 +1,33 @@
+@import "~assets/styles/variables.scss";
+
+.container {
+  position: fixed;
+  top: 0;
+  width: 90%;
+  height: 100vh;
+  z-index: $z-navbar;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+}
+
+.navBarTitle {
+  @include text(large, bold);
+
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeButton {
+  .crossImg {
+    height: 32px;
+  }
+}
+
+.close {
+  width: 0%;
+}

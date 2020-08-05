@@ -22,6 +22,7 @@ $text-weights: (
 // z-index
 $z-header: 50;
 $z-footer: 50;
+$z-navbar: 100;
 
 @mixin text($size, $thickness) {
   font-family: "Roboto";
