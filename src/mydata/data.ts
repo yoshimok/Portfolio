@@ -113,3 +113,21 @@ export const mockContacts = {
   mailAddress: "yoshimok@pompom.com",
   twitterId: "@yoshimok__",
 };
+
+export const mockNavBarContents = {
+  navBarTitle: "Contents",
+  contents: [
+    {
+      title: "news",
+      href: `${window.location.origin}/#news`,
+    },
+    {
+      title: "skills",
+      href: `${window.location.origin}/#skills`,
+    },
+    {
+      title: "contacts",
+      href: `${window.location.origin}/#contacts`,
+    },
+  ],
+};
