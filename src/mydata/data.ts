@@ -44,15 +44,15 @@ export const mockHeaderProps = {
   contents: [
     {
       title: "news",
-      href: `${window.location.origin}/#news`,
+      href: `${window.location.origin}${window.location.pathname}#news`,
     },
     {
       title: "skills",
-      href: `${window.location.origin}/#skills`,
+      href: `${window.location.origin}${window.location.pathname}#skills`,
     },
     {
       title: "contacts",
-      href: `${window.location.origin}/#contacts`,
+      href: `${window.location.origin}${window.location.pathname}#contacts`,
     },
   ],
 };
@@ -112,4 +112,22 @@ export const mockSkillContents = {
 export const mockContacts = {
   mailAddress: "yoshimok@pompom.com",
   twitterId: "@yoshimok__",
+};
+
+export const mockNavBarContents = {
+  navBarTitle: "Contents",
+  contents: [
+    {
+      title: "news",
+      href: `${window.location.origin}${window.location.pathname}#news`,
+    },
+    {
+      title: "skills",
+      href: `${window.location.origin}${window.location.pathname}#skills`,
+    },
+    {
+      title: "contacts",
+      href: `${window.location.origin}${window.location.pathname}#contacts`,
+    },
+  ],
 };

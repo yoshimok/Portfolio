@@ -1,7 +1,6 @@
 $header-height: 64px;
 
 // color
-
 $black: #121212;
 $grey: #f3f3f3;
 $dark-grey: #949494;
@@ -22,6 +21,7 @@ $text-weights: (
 // z-index
 $z-header: 50;
 $z-footer: 50;
+$z-navbar: 100;
 
 @mixin text($size, $thickness) {
   font-family: "Roboto";
