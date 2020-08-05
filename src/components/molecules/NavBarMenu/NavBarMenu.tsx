@@ -16,7 +16,6 @@ export const NavBarMenu: React.FC<Props> = (props: Props) => {
       <NavBarMenuItem
         title={item.title}
         click={() => {
-          console.log("aa");
           props.click(item.href);
         }}
       />
