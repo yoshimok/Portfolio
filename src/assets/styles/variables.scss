@@ -14,7 +14,7 @@ $text-sizes: (
 );
 
 $text-weights: (
-  bold: 900,
+  bold: 600,
   regular: 400,
 );
 
@@ -24,7 +24,6 @@ $z-footer: 50;
 $z-navbar: 100;
 
 @mixin text($size, $thickness) {
-  font-family: "Roboto";
   font-size: map-get($text-sizes, $size);
   font-weight: map-get($text-weights, $thickness);
 }
