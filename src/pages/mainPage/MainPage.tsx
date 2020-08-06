@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import logo from "assets/icons/logo.svg";
 import "./App.scss";
 import styles from "./MainPage.module.scss";
 import { useMediaQuery } from "react-responsive";
+import smoothscroll from "smoothscroll-polyfill";
 
 import * as data from "mydata/data";
 
@@ -15,11 +15,9 @@ import { Skills } from "./sections/Skills/Skills";
 import { Contacts } from "./sections/Contacts/Contacts";
 import { NavBar } from "../../components/organisms/NavBar/NavBar";
 
-export type Props = {};
+smoothscroll.polyfill();
 
-const jumpTo = (url: string) => {
-  window.location.href = url;
-};
+export type Props = {};
 
 export const MainPage: React.FC<Props> = (props: Props) => {
   const isDesktopOrLaptop = useMediaQuery({

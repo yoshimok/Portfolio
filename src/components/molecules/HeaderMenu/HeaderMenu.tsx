@@ -5,8 +5,11 @@ import { HeaderMenuItem } from "components/atoms/HeaderMenuItem/HeaderMenuItem";
 
 import { IHeaderMenuItem } from "model/interfaces";
 
-const jumpTo = (url: string) => {
-  window.location.href = url;
+const jumpTo = (id: string) => {
+  document.querySelector(id)!.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
 };
 
 export type Props = {
