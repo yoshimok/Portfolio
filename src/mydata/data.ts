@@ -44,15 +44,15 @@ export const mockHeaderProps = {
   contents: [
     {
       title: "news",
-      href: `${window.location.origin}${window.location.pathname}#news`,
+      href: `#news`,
     },
     {
       title: "skills",
-      href: `${window.location.origin}${window.location.pathname}#skills`,
+      href: `#skills`,
     },
     {
       title: "contacts",
-      href: `${window.location.origin}${window.location.pathname}#contacts`,
+      href: `#contacts`,
     },
   ],
 };
@@ -119,15 +119,15 @@ export const mockNavBarContents = {
   contents: [
     {
       title: "news",
-      href: `${window.location.origin}${window.location.pathname}#news`,
+      href: `#news`,
     },
     {
       title: "skills",
-      href: `${window.location.origin}${window.location.pathname}#skills`,
+      href: `#skills`,
     },
     {
       title: "contacts",
-      href: `${window.location.origin}${window.location.pathname}#contacts`,
+      href: `#contacts`,
     },
   ],
 };
