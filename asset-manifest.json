@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.18e50b61.chunk.css",
-    "main.js": "/Portfolio/static/js/main.29eef604.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.29eef604.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.e1dcdc44.chunk.css",
+    "main.js": "/Portfolio/static/js/main.2a748c12.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.2a748c12.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.e93a05b5.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e93a05b5.js.map",
     "static/js/2.48aaaa74.chunk.js": "/Portfolio/static/js/2.48aaaa74.chunk.js",
     "static/js/2.48aaaa74.chunk.js.map": "/Portfolio/static/js/2.48aaaa74.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.938678b3c3e2dbc1c3ab2a692417f215.js": "/Portfolio/precache-manifest.938678b3c3e2dbc1c3ab2a692417f215.js",
+    "precache-manifest.7a25b22b0486e7348bae4eca95f68b88.js": "/Portfolio/precache-manifest.7a25b22b0486e7348bae4eca95f68b88.js",
     "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.18e50b61.chunk.css.map": "/Portfolio/static/css/main.18e50b61.chunk.css.map",
+    "static/css/main.e1dcdc44.chunk.css.map": "/Portfolio/static/css/main.e1dcdc44.chunk.css.map",
     "static/js/2.48aaaa74.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.48aaaa74.chunk.js.LICENSE.txt",
-    "static/media/codepen.svg": "/Portfolio/static/media/codepen.3772eb1e.svg",
+    "static/media/codepen.svg": "/Portfolio/static/media/codepen.26b48e05.svg",
     "static/media/cross.svg": "/Portfolio/static/media/cross.5d8fa210.svg",
-    "static/media/gitHub.svg": "/Portfolio/static/media/gitHub.6ef491cb.svg",
+    "static/media/gitHub.svg": "/Portfolio/static/media/gitHub.38a42087.svg",
     "static/media/grafana.svg": "/Portfolio/static/media/grafana.d62878be.svg",
-    "static/media/hamburger.svg": "/Portfolio/static/media/hamburger.7318b123.svg",
-    "static/media/letter.svg": "/Portfolio/static/media/letter.bb9e94e3.svg",
+    "static/media/hamburger.svg": "/Portfolio/static/media/hamburger.264f90e7.svg",
+    "static/media/letter.svg": "/Portfolio/static/media/letter.70ce40e9.svg",
     "static/media/loki.svg": "/Portfolio/static/media/loki.6de4a8c7.svg",
     "static/media/react.svg": "/Portfolio/static/media/react.f37f26ad.svg",
-    "static/media/twitter.svg": "/Portfolio/static/media/twitter.35c7595b.svg"
+    "static/media/twitter.svg": "/Portfolio/static/media/twitter.7830c440.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e93a05b5.js",
     "static/js/2.48aaaa74.chunk.js",
-    "static/css/main.18e50b61.chunk.css",
-    "static/js/main.29eef604.chunk.js"
+    "static/css/main.e1dcdc44.chunk.css",
+    "static/js/main.2a748c12.chunk.js"
   ]
 }
