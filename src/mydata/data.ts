@@ -11,7 +11,7 @@ export const mockProfile = {
       name: "Maeda Yoshitaka",
       icon:
         "https://avatars0.githubusercontent.com/u/57283139?s=400&u=667cc4edcc61818d4bc39c0e44a3055789663446&v=4",
-      position: "Software Enfineer",
+      position: "Software Engineer",
     },
     services: [
       {
@@ -40,7 +40,7 @@ export const mockProfile = {
 
 export const mockHeaderProps = {
   headerTitle: "Yoshimok",
-  clickHamburger: () => {},
+  clickHamburger: () => { },
   contents: [
     {
       title: "news",
