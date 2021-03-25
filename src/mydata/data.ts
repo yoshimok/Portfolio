@@ -60,17 +60,17 @@ export const mockHeaderProps = {
 export const mockNewsContetnts = {
   contents: [
     {
-      title: "ポートフォリオ作成中！",
-      body:
-        "作ると言い続けてなかなか作成していなかったポートフォリオですが、今頑張ってつくっています。公開したらたくさんの人に見てほしいなあ。１０人か？５０人か？１００人か？？ いや１００人はないと思うな... いや５０人はあるかもしれへんわ。流石に０人ってことはないと思うな",
-      datetime: "2020-07-19T10:39:35.725Z",
-    },
-    {
       title: "News Title",
       body:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis vulputate dui. Nulla vestibulum sapien ac massa pharetra rutrum. Pellentesque lacus sapien, efficitur in mattis at, hendrerit quis tortor. Cras ac auctor lacus. Aliquam non justo id purus dignissim mattis sed viverra metus. Phasellus quis facilisis arcu. Donec molestie tortor eu vestibulum porta. Aliquam feugiat felis turpis, facilisis porta turpis pharetra ut. Vivamus ante nunc, ullamcorper at ante porttitor, luctus commodo massa.",
       datetime: "2020-07-19T10:39:35.725Z",
     },
+    {
+      title: "ポートフォリオ作成中！",
+      body:
+        "作ると言い続けてなかなか作成していなかったポートフォリオですが、今頑張ってつくっています。公開したらたくさんの人に見てほしいなあ。１０人か？５０人か？１００人か？？ いや１００人はないと思うな... いや５０人はあるかもしれへんわ。流石に０人ってことはないと思うな",
+      datetime: "2020-07-19T10:39:35.725Z",
+    }
   ],
 };
 
