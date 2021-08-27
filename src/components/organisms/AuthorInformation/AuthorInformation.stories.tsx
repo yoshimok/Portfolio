@@ -1,8 +1,8 @@
 import React from "react";
 import { AuthorInformation, Props } from "./AuthorInformation";
-import githubLogo from "assets/icons/gitHub.svg";
-import twitterLogo from "assets/icons/twitter.svg";
-import codepenLogo from "assets/icons/codepen.svg";
+import githubLogo from "assets/icons/service/gitHub.svg";
+import twitterLogo from "assets/icons/service/twitter.svg";
+import codepenLogo from "assets/icons/service/codepen.svg";
 
 export default {
   title: "Component/Organisms/AuthorInformation",

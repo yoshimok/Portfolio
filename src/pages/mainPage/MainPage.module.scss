@@ -4,9 +4,10 @@
   margin-top: $header-height;
 
   @media screen and (min-width: 960px) {
+    width: 70%;
     display: flex;
     justify-content: center;
-    padding: 0 72px;
+    margin: auto;
   }
 }
 
@@ -19,7 +20,8 @@
 
 .contents {
   @media screen and (min-width: 960px) {
-    padding-top: $header-height;
+    margin-top: $header-height;
+    padding: 24px;
     padding-left: 304px;
   }
 }

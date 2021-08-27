@@ -1,9 +1,9 @@
-import githubLogo from "assets/icons/gitHub.svg";
-import twitterLogo from "assets/icons/twitter.svg";
-import codepenLogo from "assets/icons/codepen.svg";
-import react from "assets/icons/react.svg";
-import grafana from "assets/icons/grafana.svg";
-import loki from "assets/icons/loki.svg";
+import githubLogo from "assets/icons/service/gitHub.svg";
+import twitterLogo from "assets/icons/service/twitter.svg";
+import codepenLogo from "assets/icons/service/codepen.svg";
+import react from "assets/icons/service/react.svg";
+import grafana from "assets/icons/service/grafana.svg";
+import loki from "assets/icons/service/loki.svg";
 
 export const mockProfile = {
   authorInfo: {
@@ -11,7 +11,7 @@ export const mockProfile = {
       name: "Maeda Yoshitaka",
       icon:
         "https://avatars0.githubusercontent.com/u/57283139?s=400&u=667cc4edcc61818d4bc39c0e44a3055789663446&v=4",
-      position: "Software Engineer",
+      position: "Engineer",
     },
     services: [
       {
@@ -26,21 +26,14 @@ export const mockProfile = {
         serviceIcon: twitterLogo,
         url: "https://twitter.com/yoshimok__",
       },
-      {
-        accountName: "@yoshimok",
-        serviceName: "Codepen",
-        serviceIcon: codepenLogo,
-        url: "https://github.com/yoshimok/Portfolio",
-      },
     ],
   },
   biography:
-    "自由気ままにITベンチャーでエンジニアしています。興味のある分野はたくさん。得意分野はアプリケーション開発です。よろしくお願いします。",
+    "ITベンチャーでエンジニアしています。興味のある分野はたくさん。よろしくお願いします。",
 };
 
 export const mockHeaderProps = {
-  headerTitle: "Yoshimok",
-  clickHamburger: () => { },
+  headerTitle: "yoshimok",
   contents: [
     {
       title: "news",
@@ -110,7 +103,7 @@ export const mockSkillContents = {
 };
 
 export const mockContacts = {
-  mailAddress: "yoshimok@pompom.com",
+  mailAddress: "yoshimok.dev@gmail.com",
   twitterId: "@yoshimok__",
 };
 

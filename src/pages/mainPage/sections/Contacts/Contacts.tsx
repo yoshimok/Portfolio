@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Contacts.module.scss";
 import { useMediaQuery } from "react-responsive";
 import mail from "assets/icons/letter.svg";
-import twitter from "assets/icons/twitter.svg";
+import twitter from "assets/icons/service/twitter.svg";
 
 import { Contents } from "templates/Contents/Contents";
 import { ListItemWithIcon } from "components/atoms/ListItemWithIcon/ListItemWithIcon";
