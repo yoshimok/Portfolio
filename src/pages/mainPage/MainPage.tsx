@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.scss";
 import styles from "./MainPage.module.scss";
 import { useMediaQuery } from "react-responsive";
 import smoothscroll from "smoothscroll-polyfill";
