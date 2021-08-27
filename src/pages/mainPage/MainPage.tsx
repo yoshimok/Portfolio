@@ -3,7 +3,7 @@ import styles from "./MainPage.module.scss";
 import { useMediaQuery } from "react-responsive";
 import smoothscroll from "smoothscroll-polyfill";
 
-import * as data from "mydata/data";
+import { portfolioConfig } from "config/data";
 
 import { Footer } from "components/organisms/Footer/Footer";
 import { Header } from "components/organisms/Header/Header";
@@ -28,27 +28,55 @@ export const MainPage: React.FC<Props> = (props: Props) => {
   return (
     <div>
       <NavBar
-        {...data.mockNavBarContents}
+        navBarTitle='Contents'
+        contents={[
+          {
+            title: "news",
+            href: `#news`,
+          },
+          {
+            title: "skills",
+            href: `#skills`,
+          },
+          {
+            title: "contacts",
+            href: `#contacts`,
+          },
+        ]}
         disable={disableNavBar}
         closeNavBar={() => setDisableNavBar(true)}
       />
       <Header
-        {...data.mockHeaderProps}
+        headerTitle={"yoshimok"}
+        contents={[
+          {
+            title: "news",
+            href: `#news`,
+          },
+          {
+            title: "skills",
+            href: `#skills`,
+          },
+          {
+            title: "contacts",
+            href: `#contacts`,
+          },
+        ]}
         withMenu={isDesktopOrLaptop}
         clickHamburger={() => setDisableNavBar(false)}
       />
       <div className={styles.body}>
         <div className={styles.profile}>
-          <AuthorProfile {...data.mockProfile} />
+          <AuthorProfile {...portfolioConfig.profile} />
         </div>
         <div className={styles.contents}>
-          <Biography bioText={data.mockProfile.biography} />
-          <News {...data.mockNewsContetnts} />
-          <Skills {...data.mockSkillContents} />
-          <Contacts {...data.mockContacts} />
+          <Biography bioText={portfolioConfig.profile.biography} />
+          <News contents={portfolioConfig.news} />
+          <Skills contents={portfolioConfig.skills} />
+          <Contacts {...portfolioConfig.contacts} />
         </div>
       </div>
-      <Footer copyRight="© 2020 yoshimok" />
+      <Footer copyRight='© 2021 yoshimok' />
     </div>
   );
 };

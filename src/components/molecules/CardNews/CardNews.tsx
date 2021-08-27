@@ -8,27 +8,42 @@ export type Props = {
   body: string;
   datetime: string;
   media?: string;
+  isTextFirst?: boolean;
 };
 
 const mediaRender = (image: string) => {
   return (
     <div className={styles.imageContainer}>
-      <img className={styles.image} src={image} alt="newsImage" />
+      <img className={styles.image} src={image} alt='newsImage' />
     </div>
   );
 };
 
-export const CardNews: React.FC<Props> = (props: Props) => {
+export const CardNews: React.FC<Props> = ({
+  title,
+  body,
+  datetime,
+  media,
+  isTextFirst,
+}) => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <span className={styles.title}>{props.title}</span>
+        <span className={styles.title}>{title}</span>
       </div>
-      <div className={styles.postDate}>{isoToDate(props.datetime)}</div>
-      <div className={styles.body}>
-        {props.media ? mediaRender(props.media) : null}
-        <p>{props.body}</p>
-      </div>
+      <div className={styles.postDate}>{isoToDate(datetime)}</div>
+      {isTextFirst ? (
+        <div className={styles.body}>
+          <p>{body}</p>
+
+          {media ? mediaRender(media) : null}
+        </div>
+      ) : (
+        <div className={styles.body}>
+          {media ? mediaRender(media) : null}
+          <p>{body}</p>
+        </div>
+      )}
     </div>
   );
 };

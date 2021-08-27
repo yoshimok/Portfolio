@@ -1,7 +1,6 @@
 @import "~assets/styles/variables.scss";
 
 .container {
-  margin: 0 16px;
   padding: 16px 32px;
 
   background: #ffffff;
@@ -20,9 +19,8 @@
 }
 
 .body {
+  padding-left: 8px;
   @media screen and (min-width: 960px) {
-    display: flex;
-    flex-direction: row-reverse;
   }
 
   @include text(small, regular);
@@ -34,6 +32,6 @@
 
   padding: 16px;
   .image {
-    max-width: 60vw;
+    max-width: 90%;
   }
 }

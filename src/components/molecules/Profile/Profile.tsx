@@ -11,26 +11,27 @@ export type Props = {
   sideView?: boolean;
 };
 
-export const Profile: React.FC<Props> = (props: Props) => {
+export const Profile: React.FC<Props> = ({ profile, sideView }) => {
   return (
     <div
       className={classNames(styles.container, {
-        [styles.centralize]: !props.sideView,
-        [styles.containerSideView]: props.sideView,
+        [styles.centralize]: !sideView,
+        [styles.containerSideView]: sideView,
       })}
     >
-      {props.sideView}
       <div className={styles.iconContainer}>
         <img
           className={classNames({
-            [styles.iconImage]: !props.sideView,
-            [styles.iconImageSideView]: props.sideView,
+            [styles.iconImage]: !sideView,
+            [styles.iconImageSideView]: sideView,
           })}
-          src={props.profile.icon}
-          alt="icon"
+          src={profile.icon}
+          alt='icon'
         />
       </div>
-      <Name {...props.profile} />
+      <div className={styles.nameContainer}>
+        <Name name={profile.name} position={profile.position} />
+      </div>
     </div>
   );
 };

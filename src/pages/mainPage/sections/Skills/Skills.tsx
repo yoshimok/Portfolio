@@ -14,23 +14,19 @@ interface ISkillContents {
 }
 
 export type Props = {
-  contents?: ISkillContents[];
+  contents: ISkillContents[];
 };
 
-const skillsRender = (contents?: ISkillContents[]) => {
-  return contents ? (
-    contents.map((content, index) => {
-      return (
-        <div className={styles.content} key={`skill contents-${index}`}>
-          <CardSkill {...content} />
-        </div>
-      );
-    })
-  ) : (
-    <></>
+export const Skills: React.FC<Props> = ({ contents }) => {
+  return (
+    <Contents headline='Skills'>
+      {contents.map((content, index) => {
+        return (
+          <div className={styles.content} key={`skill contents-${index}`}>
+            <CardSkill {...content} />
+          </div>
+        );
+      })}
+    </Contents>
   );
-};
-
-export const Skills: React.FC<Props> = (props: Props) => {
-  return <Contents headline="Skills">{skillsRender(props.contents)}</Contents>;
 };
