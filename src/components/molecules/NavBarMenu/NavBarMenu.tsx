@@ -10,17 +10,16 @@ export type Props = {
   click: (href: string) => void;
 };
 
-export const NavBarMenu: React.FC<Props> = (props: Props) => {
-  const menu = (menuItems: IHeaderMenuItem[]) => {
-    return menuItems.map((item, index) => (
+export const NavBarMenu: React.FC<Props> = ({ menuItems, click }) => {
+
+  return (
+    <div className={styles.container}>{menuItems.map((item, index) => (
       <NavBarMenuItem
         title={item.title}
         click={() => {
-          props.click(item.href);
+          click(item.href);
         }}
+        key={item.title}
       />
-    ));
-  };
-
-  return <div className={styles.container}>{menu(props.menuItems)}</div>;
+    ))}</div>)
 };

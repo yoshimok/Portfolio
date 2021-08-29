@@ -5,10 +5,10 @@ export type Props = {
   copyRight: string;
 };
 
-export const Footer: React.FC<Props> = (props: Props) => {
+export const Footer: React.FC<Props> = ({ copyRight }) => {
   return (
     <div className={styles.container}>
-      <div className={styles.copyRight}>{props.copyRight}</div>
+      <div className={styles.copyRight}>{copyRight}</div>
     </div>
   );
 };

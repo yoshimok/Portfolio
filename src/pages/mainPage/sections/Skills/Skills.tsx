@@ -6,15 +6,13 @@ import { Contents } from "templates/Contents/Contents";
 
 import { ISkill } from "types/interfaces";
 
-interface ISkillContents {
-  skill: ISkill;
-  body: string;
-  experience: string;
-  example: string;
-}
-
 export type Props = {
-  contents: ISkillContents[];
+  contents: {
+    skill: ISkill;
+    body: string;
+    experience: string;
+    example: string;
+  }[];
 };
 
 export const Skills: React.FC<Props> = ({ contents }) => {

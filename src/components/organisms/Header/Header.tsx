@@ -15,40 +15,32 @@ export type Props = {
   contents: IHeaderMenuItem[];
 };
 
-export const Header: React.FC<Props> = (props: Props) => {
-  const normal = () => {
-    return (
-      <>
-        <span className={styles.headerTitle}>{props.headerTitle}</span>
-        <div className={styles.hamburgerButton} onClick={props.clickHamburger}>
-          <img className={styles.buttonImage} src={icon} alt="buttonIcon" />
-        </div>
-      </>
-    );
-  };
-
-  const withMenu = () => {
-    return (
-      <>
-        <span
-          className={styles.headerTitleWitMenu}
-          onClick={() => scrotllToTop()}
-        >
-          {props.headerTitle}
-        </span>
-        <HeaderMenu menuItems={props.contents} />
-      </>
-    );
-  };
-
+export const Header: React.FC<Props> = ({ headerTitle, clickHamburger, withMenu, contents }) => {
   return (
     <div
       className={classNames(styles.header, {
-        [styles.withMenu]: props.withMenu,
-        [styles.noMenu]: !props.withMenu,
+        [styles.withMenu]: withMenu,
+        [styles.noMenu]: !withMenu,
       })}
     >
-      {props.withMenu ? withMenu() : normal()}
+      {withMenu ? (
+        <>
+          <span
+            className={styles.headerTitleWitMenu}
+            onClick={() => scrotllToTop()}
+          >
+            {headerTitle}
+          </span>
+          <HeaderMenu menuItems={contents} />
+        </>
+      ) : (
+        <>
+          <span className={styles.headerTitle}>{headerTitle}</span>
+          <div className={styles.hamburgerButton} onClick={clickHamburger}>
+            <img className={styles.buttonImage} src={icon} alt="buttonIcon" />
+          </div>
+        </>
+      )}
     </div>
   );
 };

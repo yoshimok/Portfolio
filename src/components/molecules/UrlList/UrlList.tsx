@@ -14,44 +14,38 @@ const jumpTo = (url: string) => {
   window.open(url, "_blank");
 };
 
-const urlList = (infos: IUrlInfo[]): JSX.Element => {
-  const listRender = () => {
-    return infos.map((info, index) => {
-      return (
-        <a href={info.url} target="_blank" rel="noopener noreferrer">
-          <img
-            className={styles.serviceLogo}
-            src={info.serviceIcon}
-            alt="serviceIcon"
-          />
-        </a>
-      );
-    });
-  };
-
-  return <div className={styles.list}>{listRender()}</div>;
-};
-
-const urlListWithDesc = (infos: IUrlInfo[]): JSX.Element => {
-  const listRender = () => {
-    return infos.map((info, index) => {
-      return (
-        <ListItemWithIcon
-          title={info.accountName}
-          icon={info.serviceIcon}
-          click={() => jumpTo(info.url)}
+const urlList = (infos: IUrlInfo[]): JSX.Element => (
+  <div className={styles.list}>
+    {infos.map((info, index) =>
+      <a href={info.url} target="_blank" rel="noopener noreferrer" key={index}>
+        <img
+          className={styles.serviceLogo}
+          src={info.serviceIcon}
+          alt="serviceIcon"
         />
-      );
-    });
-  };
+      </a>
+    )}
+  </div>
+)
 
-  return <div className={styles.listDesc}>{listRender()}</div>;
-};
 
-export const UrlList: React.FC<Props> = (props: Props) => {
+const urlListWithDesc = (infos: IUrlInfo[]): JSX.Element => (
+  <div className={styles.listDesc}>
+    {infos.map((info, index) =>
+      <ListItemWithIcon
+        title={info.accountName}
+        icon={info.serviceIcon}
+        click={() => jumpTo(info.url)}
+        key={index}
+      />
+    )}
+  </div>)
+
+
+export const UrlList: React.FC<Props> = ({ abridgement, urls }) => {
   return (
     <div className={styles.container}>
-      {props.abridgement ? urlList(props.urls) : urlListWithDesc(props.urls)}
+      {abridgement ? urlList(urls) : urlListWithDesc(urls)}
     </div>
   );
 };

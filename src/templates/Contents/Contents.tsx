@@ -8,11 +8,11 @@ export type Props = {
   children: ReactNode;
 };
 
-export const Contents: React.FC<Props> = (props: Props) => {
+export const Contents: React.FC<Props> = ({ headline, children }) => {
   return (
-    <div id={props.headline.toLowerCase()} className={styles.container}>
-      <Headline title={props.headline} />
-      <div className={styles.content}>{props.children}</div>
+    <div id={headline.toLowerCase()} className={styles.container}>
+      <Headline title={headline} />
+      <div className={styles.content}>{children}</div>
     </div>
   );
 };

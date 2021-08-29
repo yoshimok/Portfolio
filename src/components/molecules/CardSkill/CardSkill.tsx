@@ -12,9 +12,10 @@ export type Props = {
   example: string;
 };
 
-export const CardSkill: React.FC<Props> = (props: Props) => {
+export const CardSkill: React.FC<Props> = ({ skill, body, experience, example }) => {
+  // todo: なんかいい感じにしたい scssと二重管理になってる気がしている
   const cardBackGround = {
-    backgroundImage: `url(${props.skill.logo})`,
+    backgroundImage: `url(${skill.logo})`,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center center",
     backgroundColor: "rgba(255,255,255,0.75)",
@@ -26,18 +27,18 @@ export const CardSkill: React.FC<Props> = (props: Props) => {
   return (
     <div
       className={styles.container}
-      style={props.skill.logo ? cardBackGround : undefined}
+      style={skill.logo ? cardBackGround : undefined}
     >
       <div className={styles.header}>
-        <span className={styles.title}>{props.skill.name}</span>
+        <span className={styles.title}>{skill.name}</span>
       </div>
       <div className={styles.body}>
-        <p>{props.body}</p>
+        <p>{body}</p>
         <div className={styles.subContentsContainer}>
-          <SubContents title={"経験年数"} body={props.experience} />
-          <SubContents title={"作成物"} body={props.example} />
+          <SubContents title={"経験年数"} >{experience}</SubContents>
+          <SubContents title={"作成物"} >{example}</SubContents>
         </div>
       </div>
-    </div>
+    </div >
   );
 };

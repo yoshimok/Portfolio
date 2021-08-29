@@ -13,29 +13,29 @@ export type Props = {
   closeNavBar: () => void;
 };
 
-export const NavBar: React.FC<Props> = (props: Props) => {
+export const NavBar: React.FC<Props> = ({ navBarTitle, contents, disable, closeNavBar }) => {
   const jumpTo = (id: string) => {
     document.querySelector(id)!.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });
-    props.closeNavBar();
+    closeNavBar();
   };
 
   return (
     <div
       className={classNames(styles.container, {
-        [styles.containerClose]: props.disable,
-        [styles.containerOpen]: !props.disable,
+        [styles.containerClose]: disable,
+        [styles.containerOpen]: !disable,
       })}
     >
       <div className={styles.navBarTitle}>
-        {props.navBarTitle}
-        <div className={styles.closeButton} onClick={props.closeNavBar}>
+        {navBarTitle}
+        <div className={styles.closeButton} onClick={closeNavBar}>
           <img className={styles.crossImg} src={cross} alt="cross" />
         </div>
       </div>
-      <NavBarMenu menuItems={props.contents} click={jumpTo} />
+      <NavBarMenu menuItems={contents} click={jumpTo} />
     </div>
   );
 };

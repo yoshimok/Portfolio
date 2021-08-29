@@ -3,16 +3,16 @@ import styles from "./SubContents.module.scss";
 
 export type Props = {
   title: string;
-  body: string;
+  children?: React.ReactNode
 };
 
-export const SubContents: React.FC<Props> = (props: Props) => {
+export const SubContents: React.FC<Props> = ({ title, children }) => {
   return (
     <div className={styles.container}>
       <div className={styles.subContentHeader}>
-        <span className={styles.subContentTitle}>{props.title}</span>
+        <span className={styles.subContentTitle}>{title}</span>
       </div>
-      {props.body}
+      {children}
     </div>
   );
 };

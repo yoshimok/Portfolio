@@ -6,10 +6,10 @@ export type Props = {
   click: () => void;
 };
 
-export const NavBarMenuItem: React.FC<Props> = (props: Props) => {
+export const NavBarMenuItem: React.FC<Props> = ({ title, click }) => {
   return (
-    <div className={styles.container} onClick={props.click}>
-      <span className={styles.title}>{props.title}</span>
+    <div className={styles.container} onClick={click}>
+      <span className={styles.title}>{title}</span>
     </div>
   );
 };

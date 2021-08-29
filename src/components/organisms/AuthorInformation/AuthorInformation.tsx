@@ -13,16 +13,16 @@ export type Props = {
   urls: IUrlInfo[];
 };
 
-export const AuthorInformation: React.FC<Props> = (props: Props) => {
+export const AuthorInformation: React.FC<Props> = ({ profile, sideView, urls }) => {
   return (
     <div
       className={classNames({
-        [styles.container]: !props.sideView,
-        [styles.containerSideView]: props.sideView,
+        [styles.container]: !sideView,
+        [styles.containerSideView]: sideView,
       })}
     >
-      <Profile {...props} />
-      <UrlList urls={props.urls} abridgement={!props.sideView} />
+      <Profile profile={profile} />
+      <UrlList urls={urls} abridgement={!sideView} />
     </div>
   );
 };

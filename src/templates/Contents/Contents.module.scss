@@ -1,9 +1,9 @@
 @import "~assets/styles/variables.scss";
 
 .container {
-  padding-top: $header-height;
+  margin-top: $header-height;
 }
 
 .content {
-  margin-bottom: 16px;
+  padding: 0 16px;
 }

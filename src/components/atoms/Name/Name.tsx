@@ -6,11 +6,11 @@ export type Props = {
   position: string;
 };
 
-export const Name: React.FC<Props> = (props: Props) => {
+export const Name: React.FC<Props> = ({ name, position }) => {
   return (
     <div className={styles.container}>
-      <div className={styles.name}>{props.name}</div>
-      <div className={styles.position}>{props.position}</div>
+      <div className={styles.name}>{name}</div>
+      <div className={styles.position}>{position}</div>
     </div>
   );
 };
