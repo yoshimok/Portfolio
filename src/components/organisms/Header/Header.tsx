@@ -6,7 +6,7 @@ import { scrotllToTop } from "common/scrollToTop";
 
 import { HeaderMenu } from "../../molecules/HeaderMenu/HeaderMenu";
 
-import { IHeaderMenuItem } from "model/interfaces";
+import { IHeaderMenuItem } from "types/interfaces";
 
 export type Props = {
   headerTitle: string;

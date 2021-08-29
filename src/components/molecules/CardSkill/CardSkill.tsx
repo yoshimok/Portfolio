@@ -3,7 +3,7 @@ import styles from "./CardSkill.module.scss";
 
 import { SubContents } from "components/atoms/SubContents/SubContents";
 
-import { ISkill } from "model/interfaces";
+import { ISkill } from "types/interfaces";
 
 export type Props = {
   skill: ISkill;

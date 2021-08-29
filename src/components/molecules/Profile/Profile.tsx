@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 import { Name } from "components/atoms/Name/Name";
 
-import { IProfile } from "model/interfaces";
+import { IProfile } from "types/interfaces";
 
 export type Props = {
   profile: IProfile;

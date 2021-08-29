@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import styles from "./MainPage.module.scss";
+import styles from "./index.module.scss";
 import { useMediaQuery } from "react-responsive";
 import smoothscroll from "smoothscroll-polyfill";
 
-import { portfolioConfig } from "config/data";
+import { portfolioConfig } from "constants/config";
 
 import { Footer } from "components/organisms/Footer/Footer";
 import { Header } from "components/organisms/Header/Header";
@@ -25,43 +25,32 @@ export const MainPage: React.FC<Props> = (props: Props) => {
 
   const [disableNavBar, setDisableNavBar] = useState(true);
 
+  const pageContents = [
+    {
+      title: "news",
+      href: `#news`,
+    },
+    {
+      title: "skills",
+      href: `#skills`,
+    },
+    {
+      title: "contacts",
+      href: `#contacts`,
+    },
+  ]
+
   return (
     <div>
       <NavBar
         navBarTitle='Contents'
-        contents={[
-          {
-            title: "news",
-            href: `#news`,
-          },
-          {
-            title: "skills",
-            href: `#skills`,
-          },
-          {
-            title: "contacts",
-            href: `#contacts`,
-          },
-        ]}
+        contents={pageContents}
         disable={disableNavBar}
         closeNavBar={() => setDisableNavBar(true)}
       />
       <Header
         headerTitle={"yoshimok"}
-        contents={[
-          {
-            title: "news",
-            href: `#news`,
-          },
-          {
-            title: "skills",
-            href: `#skills`,
-          },
-          {
-            title: "contacts",
-            href: `#contacts`,
-          },
-        ]}
+        contents={pageContents}
         withMenu={isDesktopOrLaptop}
         clickHamburger={() => setDisableNavBar(false)}
       />

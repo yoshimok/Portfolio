@@ -3,7 +3,7 @@ import styles from "./UrlList.module.scss";
 
 import { ListItemWithIcon } from "components/atoms/ListItemWithIcon/ListItemWithIcon";
 
-import { IUrlInfo } from "model/interfaces";
+import { IUrlInfo } from "types/interfaces";
 
 export type Props = {
   urls: IUrlInfo[];

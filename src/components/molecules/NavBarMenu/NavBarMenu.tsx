@@ -3,7 +3,7 @@ import styles from "./NavBarMenu.module.scss";
 
 import { NavBarMenuItem } from "components/atoms/NavBarMenuItem/NavBarMenuItem";
 
-import { IHeaderMenuItem } from "model/interfaces";
+import { IHeaderMenuItem } from "types/interfaces";
 
 export type Props = {
   menuItems: IHeaderMenuItem[];

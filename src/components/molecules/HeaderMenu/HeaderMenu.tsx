@@ -3,7 +3,7 @@ import styles from "./HeaderMenu.module.scss";
 
 import { HeaderMenuItem } from "components/atoms/HeaderMenuItem/HeaderMenuItem";
 
-import { IHeaderMenuItem } from "model/interfaces";
+import { IHeaderMenuItem } from "types/interfaces";
 
 const jumpTo = (id: string) => {
   document.querySelector(id)!.scrollIntoView({

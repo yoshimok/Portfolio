@@ -1,0 +1,27 @@
+@import "~assets/styles/variables.scss";
+
+.body {
+  margin-top: $header-height;
+
+  @media screen and (min-width: 960px) {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+.profile {
+  padding-top: $header-height;
+  @media screen and (min-width: 960px) {
+    padding-right: 16px;
+  }
+}
+
+.contents {
+  @media screen and (min-width: 960px) {
+    margin-top: $header-height;
+    padding: 24px;
+    padding-left: 304px;
+  }
+}

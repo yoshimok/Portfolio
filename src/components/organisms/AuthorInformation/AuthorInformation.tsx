@@ -5,7 +5,7 @@ import classNames from "classnames";
 import { Profile } from "../../molecules/Profile/Profile";
 import { UrlList } from "../../molecules/UrlList/UrlList";
 
-import { IProfile, IUrlInfo } from "model/interfaces";
+import { IProfile, IUrlInfo } from "types/interfaces";
 
 export type Props = {
   profile: IProfile;

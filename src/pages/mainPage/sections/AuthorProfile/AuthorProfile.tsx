@@ -4,7 +4,7 @@ import { useMediaQuery } from "react-responsive";
 
 import { AuthorInformation } from "components/organisms/AuthorInformation/AuthorInformation";
 
-import { IAuthorProfile } from "model/interfaces";
+import { IAuthorProfile } from "types/interfaces";
 
 export type Props = {
   authorInfo: IAuthorProfile;

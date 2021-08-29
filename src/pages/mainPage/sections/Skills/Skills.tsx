@@ -4,7 +4,7 @@ import styles from "./Skills.module.scss";
 import { CardSkill } from "components/molecules/CardSkill/CardSkill";
 import { Contents } from "templates/Contents/Contents";
 
-import { ISkill } from "model/interfaces";
+import { ISkill } from "types/interfaces";
 
 interface ISkillContents {
   skill: ISkill;

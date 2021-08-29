@@ -3,7 +3,7 @@ import styles from "./NavBar.module.scss";
 import cross from "assets/icons/cross.svg";
 import classNames from "classnames";
 
-import { IHeaderMenuItem } from "model/interfaces";
+import { IHeaderMenuItem } from "types/interfaces";
 import { NavBarMenu } from "../../molecules/NavBarMenu/NavBarMenu";
 
 export type Props = {
